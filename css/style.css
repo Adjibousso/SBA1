@@ -1,0 +1,137 @@
+.countries {
+
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 900px;
+
+}
+.main_container{
+  height: 200PX;
+}
+ 
+
+  
+
+ 
+/* countries display */
+ .countries{ display: flex;
+      flex-direction: row;
+      margin-right: 300px;
+      
+      justify-content: space-between;
+      width: 1100PX;
+      height: 420px;
+      
+
+} 
+#benef1{
+    
+    float:left;
+}
+.travel2{ 
+    float: left;
+    width: 430px;
+    height: 310px;
+    text-align: center;
+     box-shadow: 10px 15px rgb(189, 201, 189);
+    background-color: rgb(107, 193, 239);
+     /* font-family: "Sevillana", cursive; */
+     
+}
+#dakar{
+  grid-template-columns: fit-content(200px) fit content(200px);
+  border: 2px;
+  width: 200px;
+  
+}
+#rome{
+  grid-template-columns: fit-content(200px) fit content(200px);
+  
+  width: 200px;
+  box-shadow: 52px, 40px, rgb(36, 42, 44);
+}
+#paris{
+  grid-template-columns: fit-content(200px) fit content(200px);
+  border: 2px;
+  width: 200px;}
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(36, 228, 202);
+    font-size: larger;
+    justify-content: space-evenly;
+  }
+
+  
+  li {
+    display: inline;
+  }
+
+  .video1{
+    display: flex;
+    float: right;
+  }
+
+  /* Page dakar.html  */
+/* display table of things to do in Senegal  */
+.travelsene {
+  display: flex;
+  justify-content: space-between;
+}
+/* make the border circle */
+.thiebou img { border-radius: 50%;}
+
+/* display youtube content */
+.youtube1 iframe{ 
+  display: inline;
+  border-radius: 50%;
+  justify-content: space-between;
+  height: 350px;
+  
+  flex-direction: column;
+  float: right;
+}
+
+/* display text  page dakar*/
+.textthieb{
+  display: inline;
+  float:inline-start;
+  width: 500px;
+  height: 300px;
+  font-style: italic;
+  font-size: large;
+  /* color: rgb(144, 8, 103); */
+
+  font-family: "Great Vibes", cursive;;
+  
+  
+}
+/* display google font  page dakar */
+.sevillana-regular {
+  font-family: "Sevillana", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.youtube1{
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+}
+.main_container1{
+  display: flex;
+  background-color: azure;
+  flex-wrap: wrap;
+  margin: auto;
+
+}
+
+/* Page senegal */
+
+/* rome description  */

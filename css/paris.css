@@ -1,0 +1,92 @@
+/* over all display */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+/* bacground color */
+body {
+    background: linear-gradient(to right, lightblue ,rgb(130, 236, 158));
+}
+/* main page */
+.main_paris{
+     
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+      overflow: hidden; 
+      width: 600px;
+      height: 550px;
+      float: right;
+     
+}
+/* slider size and transformation */
+.slider {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+}
+/* create a rotation slide */
+@keyframes rotate{
+    0%{
+      transform: perspective(1000px) rotate(0deg);
+    }
+    100% {transform: perspective(1000px) 
+        rotateY(360deg);
+    }
+}
+/* image rotate in the middle */
+    .slider span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-origin: center;
+        transform-style: preserve-3d;
+        transform: rotateY(calc(var(--i)*45deg)) translatez(360px);
+    }
+
+    .slider span img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 2s;
+        border-radius: 15%;
+    }
+
+    /* image  become big when over on it */
+.slider span:hover img {
+    transform: translateY(-50px) scale(2);
+}
+
+/* text area display */
+.textparis{
+    display: inline;
+    float: left;
+    margin: auto;
+    padding-left: 40x;
+    width: 400px;
+    text-align:justify;
+    font-size: larger;
+    font-style: oblique;
+}
+/* Align dropdowm list in the right side */
+#drselection{
+    display: flex;
+    width: 100px;
+    height: 150px;
+    flex-wrap: wrap;
+    float: right;
+    margin: 100px;
+    font-size: small;
+    font-weight: 700;
+
+}
